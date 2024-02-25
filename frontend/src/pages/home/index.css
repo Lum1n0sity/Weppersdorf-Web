@@ -1,0 +1,270 @@
+body {
+    background-image: url('../../images/temp_chor_img.jpg');
+    background-position-x: center;
+}
+
+.index {
+    background-color: var(--header-overlay);
+}
+
+section {
+    max-height: 100vh;
+    width: 100vw;
+}
+
+.t1 {
+    background-color: var(--section-background-t1);
+}
+
+.t2 {
+    background-color: var(--section-background-t2);
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+}
+
+.scroll-disabled {
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.choir-popup {
+    width: 90vw;
+    height: 90vh;
+    background-color: var(--header);
+    z-index: 4;
+    position: sticky;
+    left: 5%;
+    border-radius: 6px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choir-popup::-webkit-scrollbar {
+    width: 5px;
+}
+
+.choir-popup::-webkit-scrollbar-track {
+    background-color: var(--header);
+}
+
+.choir-popup::-webkit-scrollbar-thumb {
+    background-color: var(--background-light);
+    border-radius: 50px;
+    width: 5px;;
+}
+
+.choir-popup::-webkit-scrollbar-thumb:hover {
+    background: var(--light-gray-hover);
+}
+
+.popup-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.close {
+    background-color: transparent;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 2%;
+    margin-left: 31%;
+}
+
+.close span {
+    font-size: 2.5rem;
+    transform: translateY(4%);
+}
+
+.close:hover {
+    background-color: var(--background);
+}
+
+.choir-view-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 2%;
+    transform: translateX(-50%);
+}
+
+.choir-popup-choir {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.choir-popup-choir img {
+    max-width: 30%;
+    border-radius: 6px;
+}
+
+.choir-popup-choir p {
+    width: 30%;
+    font-size: 2rem;
+}
+
+.leader-view-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.choir-popup-leader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 9%;
+}
+
+.choir-popup-leader img {
+    width: 20%;
+    border-radius: 6px;
+}
+
+.choir-popup-leader p {
+    width: 30%;
+    font-size: 2rem;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin: 1vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer a:hover {
+    color: var(--light-gray-hover);
+}
+
+.bg-img-overlay {
+    height: 100vh;
+    background-color: var(--header-overlay);
+}
+
+.choir-title {
+    text-align: center;
+    font-size: 3.5rem;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}
+
+
+.view-choir {
+    position: absolute;
+    bottom: 8%;
+    left: 29.5%;
+}
+
+.date-section {
+    height: 30vh;
+}
+
+.date-title {
+    font-size: 2.5rem;
+    text-align: center;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-dates {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    width: max-content;
+    max-height: 55%;
+}
+
+.container-dates::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container-dates::-webkit-scrollbar-track {
+    background-color: var(--background);
+}
+
+.container-dates::-webkit-scrollbar-thumb {
+    background-color: var(--background-light);
+    border-radius: 50px;
+    width: 5px;;
+}
+
+.container-dates::-webkit-scrollbar-thumb:hover {
+    background: var(--light-gray-hover);
+}
+
+.choir-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.leader-img-button {
+    width: 20vw;
+}
+
+.leader-img-button img {
+    min-width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.members-section {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,111 @@
+body {
+    background-color: var(--background);
+}
+
+.header {
+    background-color: var(--section-background-t2);
+}
+
+section {
+    max-height: 100vh;
+    width: 100vw;
+}
+
+.footer {
+    margin-top: 1%;
+    height: 10vh;
+    background-color: var(--section-background-t2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin: 1vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer a:hover {
+    color: var(--light-gray-hover);
+}
+
+.main {
+    margin-left: 50%;
+    margin-top: 1%;
+    transform: translateX(-50%);
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    position: relative;
+    width: 40.2vw;
+}
+
+.search {
+    width: 40.2vw;
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+.start-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--header);
+    color: var(--text-color);
+    border: none;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 10px;
+    margin-left: .2vw;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.start-search span {
+    font-size: 1.7vw;
+}
+
+.start-search:hover {
+    color: var(--accent);
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--header);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 15vh;
+    width: 10vw;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.song:hover {
+    background-color: var(--background-light);
+}

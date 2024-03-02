@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../images/temp_chor_img.jpg');
+    background-image: url('./src/images/temp_chor_img.jpg');
     background-position-x: center;
 }
 
